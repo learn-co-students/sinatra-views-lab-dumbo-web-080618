@@ -1,0 +1,9 @@
+
+
+<h1>Today</h1>
+<%monthI = Date.today.strftime("%m").to_i%>
+<%dow = Date.today.strftime("%A")%>
+<%day = Date.today.strftime("%d")%>
+<%year = Date.today.strftime("%Y")%>
+<%months = ["January", "February", "March","April","May","June","July","August","September","October","November","December"]%>
+<p><%="The date is #{dow}, #{months[monthI-1]} #{day}, #{year}"%></p>
